@@ -128,3 +128,88 @@ print(tuesday_temperatures)
 tuesday_temperatures.clear()
 
 
+friday_temperatures = [9.1, 8.8, 7.5, 6.6, 9.9]
+len(friday_temperatures) #len(obj, /) Return the number of items in a container. 
+friday_temperatures[3]
+friday_temperatures[1:4]
+friday_temperatures[0:2]
+friday_temperatures[:2]
+print(friday_temperatures)
+""" friday_temperatures[3]
+6.6
+>>> friday_temperatures[1:4]
+[8.8, 7.5, 6.6]
+>>> friday_temperatures[0:2]
+[9.1, 8.8]
+>>> friday_temperatures[:2]
+"""  
+
+mystring = 'hello'
+mystring[1]
+mystring[-1]
+mystring[:3]
+
+"""mystring = 'hello'
+>>> mystring[1]
+'e'
+>>> mystring[-1]
+'o'
+>>> mystring[:3]
+'hel' 
+
+Summary: Positive/Negative Indexes, Slicing
+In this section you learned that:
+
+Lists, strings, and tuples have a positive index system:
+
+["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+   0      1      2      3      4      5      6
+And a negative index system:
+
+["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  -7     -6     -5     -4     -3     -2     -1
+In a list, the 2nd, 3rd, and 4th items can be accessed with:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[1:4]
+Output: ['Tue', 'Wed', 'Thu']
+First three items of a list:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:3]
+Output:['Mon', 'Tue', 'Wed'] 
+Last three items of a list:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[-3:]
+Output: ['Fri', 'Sat', 'Sun']
+Everything but the last:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:-1] 
+Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] 
+Everything but the last two:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:-2] 
+Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'] 
+A single in a dictionary can be accessed using its key:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+phone_numbers["Marry Simpsons"]
+Output: '+423998200919'
+
+
+def (create own funtion)
+"""
+def mean(mylist):
+    the_mean = sum(mylist) / len(mylist)
+    return the_mean
+
+print(mean([1, 2, 3]))
+
+
+
+
+
+
