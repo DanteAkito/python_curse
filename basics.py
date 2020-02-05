@@ -240,10 +240,91 @@ else:
     print("No")
 That will return Yes since at least one of the conditions is True. In this case x == 1 is True.
 """
+"""
+student_grades = []
+
+You can create a list of numbers automatically using a range. For example:
+
+list(range(1, 10))
+
+That will output:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+As you can see we just needed to specify the list boundaries inside range(). So, we specified 1and 10. Note that 10 is not included in the list. The generated list always runs up to one number before the upper number. In our example it goes up to 9 since the upper number is 10.
+
+You can also specify a step as a third argument:
+
+list(range(1, 10, 2))
+
+That will output:
+
+[1, 3, 5, 7, 9]
+
+So, the count happens every two items starting from 1 and ending at 9.
 
 
+student_grades = [2, 3.5, 8.9]
+mysum = sum(student_grades)
+
+length = len(student_grades)
+
+mean = mysum / length
+
+print(mean)
+student_grades = [9.1, 8.8, 7.5]
+max_value = max(student_grades)
+print(max_value)
+
+"""
+
+"""Summary: Processing User Input
+In this section you learned that:
+
+A Python program can get user input via the input function:
+
+The input function halts the execution of the program and gets text input from the user:
+
+name = input("Enter your name: ")
+The input function converts any input to a string, but you can convert it back to int or float:
+
+experience_months = input("Enter your experience in months: ")
+experience_years = int(experience_months) / 12
+You can format strings with (works both on Python 2 and 3):
+
+name = "Sim"
+experience_years = 1.5
+print("Hi %s, you have %s years of experience." % (name, experience_years))
+Output: Hi Sim, you have 1.5 years of experience.
+
+You can also format strings with (Python 3 only):
+
+name = "Sim"
+experience_years = 1.5
+print("Hi {}, you have {} years of experience".format(name, experience_years))
+Output: Hi Sim, you have 1.5 years of experience. 
 
 
+For Loop Over a Function
+Note that using loops you can call any function multiple times, even your own functions. Let's suppose we defined this function:
+
+def celsius_to_kelvin(cels):
+    return cels + 273.15
+That is a function that gets a number as input, adds 273.15 to it and returns the result. A for loop allows us to execute that function over a list of numbers:
+
+monday_temperatures = [9.1, 8.8, -270.15]
+ 
+for temperature in monday_temperatures:
+    print(celsius_to_kelvin(temperature))
+The output of that would be:
+
+282.25
+281.95
+3.0
+
+So, in the first iteration celsius_to_kelvin(9.1) was executed, in the second celsius_to_kelvin(8.8) and in the third celsius_to_kelvin(-270.15).
+
+That's just something to keep in mind.
 
 
 

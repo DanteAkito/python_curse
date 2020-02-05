@@ -9,5 +9,3 @@ if x > 2 or x >= 20:
     print("x is greater than two or less or equal than twenty")
 if (not(x == y)):
     print("x is not equal to y")  
-    
-                  
