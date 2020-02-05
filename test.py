@@ -1,3 +1,4 @@
+"""
 def make_tags(tag, word):
 '<' + tag + '>' + word + '<' + '/' + tag '>' 
 
@@ -50,3 +51,43 @@ else:
     
   def non_start(a, b):
   return a[1:] + b[1:]  
+
+
+#We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.
+
+def parrot_trouble(talking, hour):
+  if talking and (hour < 7 or hour > 20):
+    return True
+  else:
+    return False
+
+
+
+#Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+
+
+#not_string('candy') → 'not candy'
+#not_string('x') → 'not x'
+#not_string('not bad') → 'not bad'
+
+
+#def not_string(str):
+ #   if len(str) >= 3 and str[:3] == "not":
+  #      return str
+   # else: 
+    #    return "not " + str
+
+!!! 
+"""
+def missing_char(str, n):
+    front = str[:n]   # up to but not including n
+    back = str[n+1:]  # n+1 through end of string
+    return front + back
+
+
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
+
+
+missing_char('kitten', 1) → 'ktten'
+missing_char('kitten', 0) → 'itten'
+missing_char('kitten', 4) → 'kittn'
