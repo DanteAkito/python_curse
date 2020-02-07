@@ -31,3 +31,5 @@ for color in colors:
     if isinstance(color, int) and color > 50:
         print(color)
 
+        
+
